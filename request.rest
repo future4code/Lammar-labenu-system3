@@ -1,2 +1,25 @@
 ### Teste
 GET http://localhost:3003/ping
+
+### Turma
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+    "id": "4",
+    "nome": "machado",
+    "tipo":"noturno"
+}
+
+### Estudante
+POST http://localhost:3003/estudante
+Content-Type: application/json 
+
+{
+    "id": 1,
+    "nome": "João Pedro",
+    "email": "jp@email.com",
+    "data_nasc": "1999-10-03",
+    "hobbies": ["Ler livros", "Ver filmes", "Cuidar da Lola"],
+    "turma_id": 2
+}
