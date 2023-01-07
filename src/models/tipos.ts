@@ -9,7 +9,7 @@ export type createClassInput = {
     tipo:TYPE_CLASS
 }
 export type createStudentInput = {
-    id:number,
+    id:string,
     nome:string,
     email:string,
     data_nasc:string,

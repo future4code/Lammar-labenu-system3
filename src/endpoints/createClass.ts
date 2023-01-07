@@ -21,7 +21,7 @@ export const createClass = async (req: Request, res: Response) => {
         throw new Error("Os valores possíveis são 'integral' ou 'noturno'.")
      }
      if(input.tipo === TYPE_CLASS.NOTURNA){
-        input.nome = input.nome+="-na-night"
+        input.nome = input.nome
      }
      await connection.raw(`
      INSERT INTO TURMA (id, nome, modulo)
