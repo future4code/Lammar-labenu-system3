@@ -31,7 +31,7 @@ export const createStudent = async (req: Request, res: Response) => {
      for (let hobby of input.hobbies){
         const idHobby =  Math.floor(Math.random() * 1000000)
         await connection.raw(`
-        INSERT INTO HOBY(id,nome)
+        INSERT INTO HOBBY(id,nome)
         VALUES(
             "${idHobby}",
             "${hobby}"
