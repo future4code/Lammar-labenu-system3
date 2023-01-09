@@ -28,6 +28,7 @@ O que funciona:
 → mudar estudante de turma;
 
 
+
 O que não funciona:
 → buscar Docente e Estudante pelo nome
 
@@ -37,5 +38,4 @@ Link da documentação no postman:
 https://documenter.getpostman.com/view/22349315/2s8Z75Sq5g
 
 ![image](https://user-images.githubusercontent.com/73232846/211232859-5e38817d-15ae-4224-aae2-2a00de73e81f.png)
-
 
