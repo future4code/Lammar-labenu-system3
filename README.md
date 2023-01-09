@@ -4,14 +4,9 @@ Sistema que apresenta funcionamento da organização.
 
 O sistema dispõe de 3 entidades:
 
-1. Estudantes 
-
-   
+1. Estudantes  
 2. Docente
-
-    
 3. Turma
-
     
 As funcionalidades básicas são:
 → Criar turma;
@@ -32,6 +27,7 @@ O que funciona:
 O que não funciona:
 → criar Docente
 → buscar Docente e Estudante pelo nome
+→ mudar docente de turma
 
 Link do deploy:
 
