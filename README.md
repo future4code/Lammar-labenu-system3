@@ -32,4 +32,7 @@ O que não funciona:
 Link do deploy:
 
 Link da documentação no postman:
+https://documenter.getpostman.com/view/22349315/2s8Z75Sq5g
+
+
 
