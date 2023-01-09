@@ -16,10 +16,50 @@ POST http://localhost:3003/estudante
 Content-Type: application/json 
 
 {
+
+    "id": 8,
+    "nome": "Paulo",
+    "email": "paulo@email.com",
+    "data_nasc": "1995-03-07",
+    "hobbies": "Familia",
+    "turma_id": 2
+}
+
+
+### Docente
+POST http://localhost:3003/docente
+Content-Type: application/json 
+
+{
+    "id": 3,
+    "nome": "Carol",
+    "email": "carol@email.com",
+    "data_nasc": "1987-06-10",
+    "especialidades": ["JS", "CSS", "REACT"],
+    "turma_id": 3
+}
+
+### ATUALIZAR DOCENTE
+PUT  http://localhost:3003/docente
+Content-Type: application/json
+
+{
+    "docente_id": 1,
+    "turma_id": 3
+}
+
+### ATUALIZAR ESTUDANTE
+PUT  http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "estudante_id": 1,
+
     "id": "3",
     "nome": "Bianca",
     "email": "bianca@email.com",
     "data_nasc": "1992-04-03",
     "hobbies": ["Gastronomia", "Yoga", "Budismo"],
+
     "turma_id": 3
 }
