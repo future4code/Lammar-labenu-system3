@@ -4,8 +4,10 @@ import { ping } from "./endpoints/ping";
 import { createClass } from "./endpoints/createClass";
 import { createStudent } from "./endpoints/createStudent";
 import { createTeacher } from "./endpoints/createTeacher";
+
 import { student } from "./endpoints/student";
 import { teacher} from "./endpoints/teacher"
+
 
 
 
@@ -24,9 +26,16 @@ app.get("/ping", ping);
 app.post("/turma", createClass);
 
 //Estudante
+
+app.post("/estudante", createStudent);
+
+//Docente
+app.post("/docente", createTeacher);
+
 app.post("/estudante", createStudent)
 app.put("/estudante", student)
 
 //Docente
 app.post("/docente", createTeacher)
 app.put("/docente", teacher)
+
