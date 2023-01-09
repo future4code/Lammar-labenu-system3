@@ -16,6 +16,7 @@ POST http://localhost:3003/estudante
 Content-Type: application/json 
 
 {
+
     "id": 8,
     "nome": "Paulo",
     "email": "paulo@email.com",
@@ -53,5 +54,12 @@ Content-Type: application/json
 
 {
     "estudante_id": 1,
+
+    "id": "3",
+    "nome": "Bianca",
+    "email": "bianca@email.com",
+    "data_nasc": "1992-04-03",
+    "hobbies": ["Gastronomia", "Yoga", "Budismo"],
+
     "turma_id": 3
 }
