@@ -23,16 +23,16 @@ As funcionalidades básicas são:
 O que funciona:
 → criar Turma;
 → criar Estudante;
+→ criar Docente;
+→ mudar docente de turma;
+→ mudar estudante de turma;
 
 O que não funciona:
-→ criar Docente
 → buscar Docente e Estudante pelo nome
-→ mudar docente de turma
 
 Link do deploy:
 
 Link da documentação no postman:
 https://documenter.getpostman.com/view/22349315/2s8Z75Sq5g
-
 
 
