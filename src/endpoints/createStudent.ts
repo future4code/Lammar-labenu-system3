@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import connection from "../database/connections";
 import { createStudentInput } from "../models/tipos";
 
+
 export const createStudent = async (req: Request, res: Response) => {
     let errorCode= 400
     try{

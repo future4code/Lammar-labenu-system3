@@ -3,7 +3,7 @@ import connection from "../database/connections";
 import { createTeacherInput, ESPECIALIDADE } from "../models/tipos";
 
 export const createTeacher = async (req: Request, res: Response) => {
-    let errorCode= 400
+    let errorCode = 400
     try{
      const input: createTeacherInput = {
         id: req.body.id,
