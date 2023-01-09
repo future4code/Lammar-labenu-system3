@@ -3,6 +3,7 @@ import cors from "cors";
 import { ping } from "./endpoints/ping";
 import { createClass } from "./endpoints/createClass";
 import { createStudent } from "./endpoints/createStudent";
+import { createTeacher } from "./endpoints/createTeacher";
 
 
 const app = express ();
@@ -20,4 +21,7 @@ app.get("/ping", ping);
 app.post("/turma", createClass);
 
 //Estudante
-app.post("/estudante", createStudent)
+app.post("/estudante", createStudent);
+
+//Docente
+app.post("/docente", createTeacher);
