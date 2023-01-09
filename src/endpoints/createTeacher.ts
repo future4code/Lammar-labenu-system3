@@ -1,25 +1,25 @@
 import { Request, Response } from "express";
 import connection from "../database/connections";
-import { createStudentInput } from "../models/tipos";
+import { createTeacherInput, ESPECIALIDADE } from "../models/tipos";
 
-export const createStudent = async (req: Request, res: Response) => {
+export const createTeacher = async (req: Request, res: Response) => {
     let errorCode= 400
     try{
-     const input: createStudentInput = {
+     const input: createTeacherInput = {
         id: req.body.id,
         nome: req.body.nome,
         email: req.body.email,
         data_nasc:req.body.data_nasc,
-        hobbies: req.body.hobbies,
+        especialidades: req.body.especialidades,
         turma_id: req.body.turma_id
      } 
-     if(!input.id || !input.nome || !input.email || !input.data_nasc || input.hobbies.length<1){
+     if(!input.id || !input.nome || !input.email || !input.data_nasc || input.especialidades.length<1){
         errorCode = 422
         throw new Error("Preencha os campos corretamente")
      }
 
      await connection.raw(`
-     INSERT INTO ESTUDANTE(id, nome, email, data_nasc, turma_id)
+     INSERT INTO DOCENTE(id, nome, email, data_nasc, turma_id)
      VALUES
      (${input.id},
      "${input.nome}",
@@ -28,21 +28,16 @@ export const createStudent = async (req: Request, res: Response) => {
       ${input.turma_id}
     )
      `)
-     for (let hobby of input.hobbies){
+     for (let especialidade of input.especialidades){
         await connection.raw(`
-        INSERT INTO HOBBY(id,nome)
-        VALUES(
-            "${hobby}"
-        )
-        `)
-
-        await connection.raw(`
-        INSERT INTO ESTUDANTE_HOBBY(estudante_id, hobby_id)
+        INSERT INTO DOCENTE_ESPECIALIDADE(docente_id, especialidade_id)
         VALUES(
             ${input.id},
+            ${ESPECIALIDADE[especialidade]}
             
         )
         `)
+        
      }
      res.status(201).send({message:"Conseguimos criar"})
     }catch (error:any){   
