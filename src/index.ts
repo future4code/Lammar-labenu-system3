@@ -4,11 +4,12 @@ import { ping } from "./endpoints/ping";
 import { createClass } from "./endpoints/createClass";
 import { createStudent } from "./endpoints/createStudent";
 import { createTeacher } from "./endpoints/createTeacher";
+import dotenv from "dotenv"
 
 import { student } from "./endpoints/student";
 import { teacher} from "./endpoints/teacher"
 
-
+dotenv.config()
 
 
 const app = express ();
