@@ -40,3 +40,4 @@ export type updateTeacherInput = {
     docente_id:number,
     turma_id:number
 }
+

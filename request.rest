@@ -63,3 +63,16 @@ Content-Type: application/json
 
     "turma_id": 3
 }
+
+### Docente
+POST http://localhost:3003/docente
+Content-Type: application/json 
+
+{
+    "id": "1",
+    "nome": "Manuela",
+    "email": "manuela@email.com",
+    "data_nasc": "1990-06-07",
+    "especialidades": ["CSS", "MySQL", "React"],
+    "turma_id": "1"
+}
