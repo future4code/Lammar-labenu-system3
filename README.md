@@ -1,5 +1,7 @@
 ## LabenuSystem:
 
+As funcionalidades básicas são:
+
 Sistema que apresenta funcionamento da organização.
 
 O sistema dispõe de 3 entidades:
@@ -26,6 +28,7 @@ O que funciona:
 → criar Docente;
 → mudar docente de turma;
 → mudar estudante de turma;
+
 
 
 
