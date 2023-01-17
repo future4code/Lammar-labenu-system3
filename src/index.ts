@@ -7,8 +7,8 @@ import { createTeacher } from "./endpoints/createTeacher";
 import dotenv from "dotenv"
 
 import { student } from "./endpoints/student";
-import { teacher} from "./endpoints/teacher"
-
+import { teacher} from "./endpoints/teacher";
+import dotenv from "dotenv";
 
 dotenv.config()
 
