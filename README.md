@@ -36,6 +36,7 @@ O que não funciona:
 → buscar Docente e Estudante pelo nome
 
 Link do deploy:
+https://lammar-labenu-system3-vidr.onrender.com
 
 Link da documentação no postman:
 https://documenter.getpostman.com/view/22349315/2s8Z75Sq5g
