@@ -5,10 +5,9 @@ import { createClass } from "./endpoints/createClass";
 import { createStudent } from "./endpoints/createStudent";
 import { createTeacher } from "./endpoints/createTeacher";
 import dotenv from "dotenv"
-
 import { student } from "./endpoints/student";
 import { teacher} from "./endpoints/teacher";
-import dotenv from "dotenv";
+
 
 dotenv.config()
 
